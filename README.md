@@ -31,7 +31,9 @@ I was now getting one coupon at a time (after 2-3 minutes). When I got the outco
 If status message is MAX_LIMIT_BREACHED (meaning a valid coupon was already embedded to my cart by the python script), fetch the coupon code thats present in my cart, use this code to unapply the coupon code from my cart with the unapply api and finally store this code in the final valid coupon code result list. Continue calling the apply coupon api.
 
 apply_url = "https://www.jiomart.com/mst/rest/v1/5/cart/apply_coupon"
+
 unapply_url = "https://www.jiomart.com/mst/rest/v1/5/cart/unapply_coupon?coupon_code=####&cart_id=649837557"
+
 get_current_coupon_url = "https://www.jiomart.com/mst/rest/v1/5/cart/get"
 
 All of these are GET apis
